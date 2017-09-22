@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="/assets/style.css" type="text/css" />
+    <script src="/script/login.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  </head>
+  <body class="darkBlue">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/sweetalert2/5.3.5/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/sweetalert2/5.3.5/sweetalert2.min.js"></script>
+
+    <% include partials/nav.ejs %>
+
+    <div class="register">
+      <h1 style="text-align: center; color: white; padding-top: 20px">LOGIN</h1>
+      <form id="login-form" class="register">
+        <input type="email" required class="input-lg register" placeholder="Email" name="username">
+        <br>
+        <input type="password" required class="input-lg register" placeholder="Password" name="password">
+        <br>
+        <button type="submit" id="submit-button" class="btn btn-danger register">login</button>
+        <br>
+        <p style="position: relative; left: 220px; top: 20px">First here ?
+          <a href="/register">sign up</a>
+        </p>
+
+      </form>
+
+    </div>
+
+  </body>
+</html>

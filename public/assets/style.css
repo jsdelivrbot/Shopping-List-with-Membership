@@ -1,0 +1,164 @@
+/* home */
+#home-top-pic{
+  width: 1905px;
+  height: 482px;
+  object-fit: cover;
+}
+
+#profile-pic{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+#download-btn{
+  padding:10px;
+}
+
+.profile-div{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 20px
+}
+
+@media (min-width: 768px){
+    .profile-div{
+        text-align: justify;
+    }
+}
+
+.skills-info{
+  font-size: 16px;
+}
+
+.title{
+  text-align: center;
+  font-size: 60px;
+  padding:20px;
+}
+
+.section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#introduction{
+  padding-top: 50px;
+}
+@media (min-width: 768px){
+    #introduction{
+        height: auto;
+        font-size: 20px;
+        padding-top: 0px;
+    }
+}
+
+.profile-left{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#nav{
+  margin: 0;
+}
+
+/* todolist */
+body.darkBlue{
+    background: #0d1521;
+    font-family: tahoma;
+    color: #989898;
+}
+
+#todo-table{
+    position: relative;
+    width: 95%;
+    background: #090d13;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#todo-table form:after{
+    margin: 0;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+input.darkBlue[type="text"]{
+    width: 70%;
+    padding: 20px;
+    background:#181c22;
+    border: 0;
+    float: left;
+    font-size: 20px;
+    color: #989898;
+}
+
+button.darkBlue{
+    padding: 20px;
+    width: 30%;
+    float: left;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+ul.darkBlue{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.darkBlue{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+#delete-item:hover{
+    text-decoration: line-through;
+    background: rgba(0,0,0,0.2);
+}
+
+#register-form{
+
+}
+
+div.register{
+  left: calc((100% - 600px) * 0.5);
+  width: 600px;
+  position: absolute;
+  top: 150px;
+  height: 400px;
+  border-style: solid;
+  border-color: white;
+}
+
+form.register{
+  position: relative;
+  top: 4%;
+  left: 19%;
+  margin: 20px;
+}
+
+input.register{
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+button.register{
+  position: relative;
+  left: 23%;
+  margin-top: 20px;
+}

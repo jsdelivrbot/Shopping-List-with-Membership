@@ -1,0 +1,39 @@
+<div class="navbar-wrapper" id="nav-bar">
+  <nav class="navbar navbar-light bg-faded rounded navbar-toggleable-md" id="nav">
+    <div class="navbar-header">
+      <button class="navbar-toggler navbar-toggler-right collapsed" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <a class="navbar-brand" href="/">Derek</a>
+    <div class="collapse navbar-collapse" id="containerNavbar">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Profile<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/todo">ToDoList</a>
+        </li>
+      </ul>
+      
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-right">
+        <%if (!login){ %>
+          <li class="nav-item justify-content-end">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+        <% }else{ %>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+        <% } %>
+
+      </ul>
+
+    </div>
+
+  </nav>
+</div>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>TodoList</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/script/todo-list.js"></script>
+    <link rel="stylesheet" href="/assets/style.css" type="text/css" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+  <body class="darkBlue">
+    
+    <% include partials/nav.ejs %>
+    <div id="todo-table">
+      <form id="todo-add">
+        <input type="text" name="item" class="darkBlue" placeholder="Add new item..." required />
+        <button type="submit" class="darkBlue">Add Item</button>
+      </form>
+      <input type="hidden" id="username" name="" value="<%= username%>">
+      <ul class="darkBlue">
+        <% for(var i=0; i< todos.length; i++){ %>
+          <li id="delete-item" class="darkBlue"><%= todos[i].item %></li>
+        <% } %>
+      </ul>
+    </div>
+  </body>
+</html>
